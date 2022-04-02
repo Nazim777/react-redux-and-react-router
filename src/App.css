@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+.fakestore{
+  width: 200px;
+  height: 200px;
+}
+.button{
+  margin-left: 20px;
+}
+.add{
+  position: absolute;
+  top: 0;
+  right: 0;
+ 
+ 
+}
+.add img{
+  height: 100px;
+  width: 100px;
+  
+}
+.add h1{
+  text-align: center;
+  margin-bottom: 80px;
+  background-color: #282c34;
+  color: crimson;
+}
