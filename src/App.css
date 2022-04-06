@@ -61,3 +61,19 @@
   background-color: #282c34;
   color: crimson;
 }
+.users{
+  border: 1px solid cyan;
+  color: #191441;
+  background-color: crimson;
+  font-size: 20px;
+}
+.details{
+  border: 1px solid crimson;
+  font-size: 20px;
+  background-color: cyan;
+  color: crimson;
+}
+.nav{
+  text-decoration: none;
+  color: #61dafb;
+}
