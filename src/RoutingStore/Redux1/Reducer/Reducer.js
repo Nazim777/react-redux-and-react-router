@@ -1,0 +1,49 @@
+const cart = []
+ export const carthandler =(state=cart, action) =>{
+    const product = action.payload;
+   
+
+
+
+    switch (action.type) {
+        case 'ADDITEM':
+            const exist = state.find((item)=>item.id===product.id)
+            if(exist){
+               return state.map((item)=>item.id===product.id?{...item,  quantity: item.quantity+1}:item
+               )
+            } else{
+                const product = action.pyaload;
+                return [
+                    ...state,
+                    {
+                        ...product,
+                        quantity: 1
+                    }
+                ]
+            }
+            
+            
+            break;
+
+
+            case 'DELITEM':
+                const exist1 = state.find((item)=>item.id==product.id)
+                if(exist1.quantity===1){
+                    return state.filter((item)=>
+                    item.id !==exist1.id
+                    )
+                } else{
+                    return state.map((item)=>
+                    item.id===product.id?{...item,quantity:item.quantity-1} :item
+                    )
+                }
+
+    
+        default:
+            return state;
+    }
+
+
+
+
+}

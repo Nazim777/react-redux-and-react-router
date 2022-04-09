@@ -77,3 +77,19 @@
   text-decoration: none;
   color: #61dafb;
 }
+.image{
+  width: 350px;
+  height: 350px;
+}
+.image img{
+  width: 100%;
+  height: 100%;
+}
+.zero{
+  font-size: 25px;
+  color: red;
+  position: absolute;
+  top: 0;
+  right: 30px;
+
+}
