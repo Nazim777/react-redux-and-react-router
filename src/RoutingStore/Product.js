@@ -1,11 +1,11 @@
 import React,{useState,useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import {cartitem} from './Redux1/Action/Action'
+import {add} from './Reduxtoolkit/CartSlice'
 const Product = () => {
   const dispatch= useDispatch()
   const cartadd= (details) =>{
-    dispatch(cartitem(details))
+    dispatch(add(details))
   }
   
   

@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 
 const Header = () => {
-  const state = useSelector((state)=>state.carthandler)
+  const state = useSelector((state)=>state.cart)
   
  
   return (
